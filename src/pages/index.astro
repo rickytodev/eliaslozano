@@ -1,0 +1,45 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Limit from "@components/Limit.astro";
+import Information from "@components/Information.astro";
+import Title from "@components/Title.astro";
+import Sponsors from "@components/Sponsors.astro";
+import Subtitle from "@components/Subtitle.astro";
+import PixelartBox from "@components/PixelartBox.astro";
+import Social from "@components/Social.astro";
+import Games from "@components/Games.astro";
+import Menu from "@components/Menu.astro";
+---
+
+<Layout>
+  <Header />
+  <Menu />
+
+  <Limit>
+    <Information />
+
+    <Title text="Sponsors" id="sponsors" />
+
+    <Sponsors />
+
+    <Title text="Pixelarts" id="pixelarts" />
+
+    <Subtitle text="Revisiones" />
+    <PixelartBox method="reviews" />
+
+    <Subtitle text="Retratos" />
+    <PixelartBox method="portraits" />
+
+    <Subtitle text="Wallpapers" />
+    <PixelartBox method="wallpapers" />
+
+    <Title text="Redes" id="redes" />
+
+    <Social />
+
+    <Title text="Juegos" id="games" />
+
+    <Games />
+  </Limit>
+</Layout>

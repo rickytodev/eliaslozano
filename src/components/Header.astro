@@ -1,0 +1,25 @@
+---
+import headerJSON from "@jsons/header.json";
+---
+
+<header
+  class="w-fit px-2 left-1/2 -translate-x-1/2 border border-[#eee] fixed top-5 h-14 z-10 rounded-md flex justify-center items-center bg-white max-sm:border-none max-sm:justify-end max-sm:bg-transparent max-sm:max-w-none max-sm:px-4"
+>
+  <nav class="w-full h-full space-x-1 flex items-center justify-center max-sm:hidden">
+    {
+      headerJSON.map((element) => (
+        <a
+          href={element.link}
+          class="px-4 py-2 h-fit flex justify-center items-center rounded-[4px] text-[15px] hover:bg-gray-100 transition-all duration-300 ease-linear"
+        >
+          <i class={`ri-${element.icon}-line mr-2.5`} />
+          {element.name}
+        </a>
+      ))
+    }
+  </nav>
+
+  <i
+    class="ri-menu-4-line text-[50px] hidden max-sm:block"
+    id="bt-activate-menu"></i>
+</header>

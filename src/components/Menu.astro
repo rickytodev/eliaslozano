@@ -1,0 +1,69 @@
+<menu
+  class="w-full h-full fixed z-30 p-0 bg-white hidden justify-center items-center"
+>
+  <i
+    class="ri-close-line absolute top-5 right-4 w-[50px] h-[50px] text-[50px] flex justify-center items-center"
+    id="bt-deactivate-menu"></i>
+
+  <nav class="w-[80%] space-y-5 flex flex-col justify-center">
+    <a
+      href="/"
+      class="w-full h-[60px] border border-[#eee] flex justify-center items-center rounded-md text-[15px] hover:bg-gray-100"
+    >
+      <i class="ri-home-2-line mr-2"></i>
+      Inicio
+    </a>
+    <a
+      href="http://asmrpixel.art/"
+      target="_blank"
+      class="w-full h-[60px] border border-[#eee] flex justify-center items-center rounded-md text-[15px] hover:bg-gray-100"
+    >
+      <i class="ri-shopping-bag-4-line mr-2"></i>
+      Tienda
+    </a>
+    <a
+      href="#pixelarts"
+      class="w-full h-[60px] border border-[#eee] flex justify-center items-center rounded-md text-[15px] hover:bg-gray-100"
+    >
+      <i class="ri-image-line mr-2"></i>
+      Pixelarts
+    </a>
+    <a
+      href="#redes"
+      class="w-full h-[60px] border border-[#eee] flex justify-center items-center rounded-md text-[15px] hover:bg-gray-100"
+    >
+      <i class="ri-heart-2-line mr-2"></i>
+      Redes
+    </a>
+    <a
+      href="#games"
+      class="w-full h-[60px] border border-[#eee] flex justify-center items-center rounded-md text-[15px] hover:bg-gray-100"
+    >
+      <i class="ri-gamepad-line mr-2"></i>
+      Juegos
+    </a>
+  </nav>
+</menu>
+
+<script>
+  const buttonClose = document.getElementById(
+    "bt-deactivate-menu"
+  ) as HTMLElement;
+  const buttonMenu = document.getElementById("bt-activate-menu") as HTMLElement;
+  const menu = document.querySelector("menu") as HTMLMenuElement;
+  const anchors = document.querySelectorAll("a");
+
+  buttonMenu.addEventListener("click", () => {
+    menu.style.display = "flex";
+  });
+
+  buttonClose.addEventListener("click", () => {
+    menu.style.display = "none";
+  });
+
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", () => {
+      menu.style.display = "none";
+    });
+  });
+</script>

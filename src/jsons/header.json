@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Tienda",
+    "icon": "shopping-bag-4",
+    "link": "http://asmrpixel.art/"
+  },
+  {
+    "name": "Pixelarts",
+    "icon": "image",
+    "link": "/#pixelarts"
+  },
+  {
+    "name": "Redes Sociales",
+    "icon": "heart-2",
+    "link": "/#redes"
+  },
+  {
+    "name": "Juegos",
+    "icon": "gamepad",
+    "link": "/#games"
+  }
+]

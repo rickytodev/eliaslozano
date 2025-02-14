@@ -1,0 +1,42 @@
+[
+  {
+    "src": "/images/social/artstation.avif",
+    "alt": "artstation",
+    "url": "https://www.artstation.com/eliaslozano"
+  },
+  {
+    "src": "/images/social/discord.avif",
+    "alt": "discord",
+    "url": "https://discord.com/invite/Y6cB5fg3hS"
+  },
+  {
+    "src": "/images/social/instagram.avif",
+    "alt": "instagram",
+    "url": "https://www.instagram.com/elias_lozano_garcia/?hl=es"
+  },
+  {
+    "src": "/images/social/linkedin.avif",
+    "alt": "linkedin",
+    "url": "https://www.linkedin.com/in/elias-lozano-garcia-46a7b51/"
+  },
+  {
+    "src": "/images/social/steam.avif",
+    "alt": "steam",
+    "url": "https://steamcommunity.com/profiles/76561198090638698/myworkshopfiles/?appid=431960"
+  },
+  {
+    "src": "/images/social/tiktok.avif",
+    "alt": "tiktok",
+    "url": "https://www.tiktok.com/@Elias_lozano"
+  },
+  {
+    "src": "/images/social/twitch.avif",
+    "alt": "twitch",
+    "url": "https://www.twitch.tv/Eliaslo"
+  },
+  {
+    "src": "/images/social/youtube.avif",
+    "alt": "youtube",
+    "url": "https://www.youtube.com/@Elias_Lozano-Pixelart"
+  }
+]

@@ -1,0 +1,39 @@
+---
+import pixelJSON from "@jsons/pixelarts.json";
+
+interface Props {
+  method: string;
+}
+
+const { method } = Astro.props;
+
+let json: { url_format: string; children: string[] }[] = [];
+
+pixelJSON.map((element) => {
+  if (method === element.section) {
+    json.push({ url_format: element.section, children: element.children });
+  }
+});
+---
+
+<section class="w-full flex flex-wrap justify-center items-center mb-10">
+  {
+    json.map((pxl) =>
+      pxl.children.map((pixelArt) => {
+        const route_image = `/images/pixelarts/${pxl.url_format}/${pixelArt}.avif`;
+        return (
+          <a
+            href={route_image}
+            target="_blank"
+            class="w-[280px] h-[200px] flex justify-center items-center m-5 rounded-lg overflow-hidden max-lg:w-2/5 max-lg:h-[220px] max-md:h-[180px] max-sm:w-full max-sm:h-auto max-sm:max-h-[300px]"
+          >
+            <img
+              src={route_image}
+              class="w-full h-full hover:scale-110 transition-all duration-[.2s] ease-linear"
+            />
+          </a>
+        );
+      })
+    )
+  }
+</section>

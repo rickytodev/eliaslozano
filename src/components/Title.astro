@@ -1,0 +1,17 @@
+---
+interface Props {
+  text: string;
+  id: string;
+}
+
+const { text, id } = Astro.props;
+---
+
+<section
+  class="w-full h-[1px] bg-[#D9D9D9] relative fles justify-center items-center scroll-mt-28 my-20 max-sm:scroll-mt-11"
+  id={id}
+>
+  <span class="w-full absolute -top-5 flex justify-center items-center">
+    <h1 class="px-7 bg-white left-1/2 font-extrabold text-[24px]">{text}</h1>
+  </span>
+</section>

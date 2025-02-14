@@ -1,0 +1,21 @@
+---
+import json from "@jsons/sponsors.json";
+---
+
+<section class="w-full flex flex-wrap justify-center items-center mb-10">
+  {
+    json.map((e) => (
+      <a
+        href={e.url}
+        target="_blank"
+        class="w-[280px] h-[200px] flex justify-center items-center m-5 border border-[#eee] hover:bg-[#fafafa] rounded-lg group max-xl:w-2/5 max-sm:w-full"
+      >
+        <img
+          src={e.src}
+          alt={e.alt}
+          class="w-[120px] group-hover:scale-110 transition-all duration-[.2s] ease-linear"
+        />
+      </a>
+    ))
+  }
+</section>
